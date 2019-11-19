@@ -1,1 +1,101 @@
 
+<!DOCTYPE html>
+<html>
+<head>
+<title>Stock Profit Calculator - Class Assignment</title>
+<style> 
+    body { 
+        text-align: center; 
+    } 
+      
+    h1 { 
+        color: green; 
+    } 
+</style> 
+</head>
+  <body>
+    <p>&nbsp;</p>
+    <h1>Stock Profit Calculator</h1>
+
+    <form action="/" method="POST">
+      <table>
+        <tbody>
+          <tr>
+            <td>&nbsp;Ticket Symbol:<input name="company_symbol" type="text" /></td>
+            <td rowspan="7"  style="padding-left:500px;">
+              <h2>Compute Your Profit: </h2><br>
+              Ticket Symbol:<br>
+              {{tickerSybol}}<br>
+
+              Allotment: <br>
+              {{allot_1}}<br>
+
+              Final Share Price: <br>
+              {{finalShare_1}}<br>
+
+              Sell Commission: <br>
+              {{sellComm_1}}<br>
+
+              Initial Share Price:<br>
+              {{initShare_1}}<br>
+
+              Buy Commission: <br>
+              {{buyComm_1}}<br>
+
+              Capital Gain Rate(%):<br>
+              {{taxRate_1}}<br>
+
+              <h2>PROFIT REPORT: </h2><br>
+
+              Proceeds<br>
+              {{pro_1}}<br>
+
+              Cost<br>
+              {{cost_1}}<br>
+
+              Cost Details: <br>
+
+              Total purchase Price &nbsp;<br>
+              {{i_total_1}} <br>
+
+              Buy Commission = &nbsp; {{buyComm_1}}<br>
+              Sell Commission = &nbsp;{{sellComm_1}}<br>
+              Tax on Capital Gain = &nbsp;{{taxRate_1}}<br><br>
+
+              Net profit<br>
+              {{n_profit_1}}<br>
+
+              Return on Investment<br>
+              {{ret_on_inv_1}}<br>
+
+              To break even, you should have a final share price of <br>
+              {{b_reakeven}}<br>
+            </td>
+          </tr>
+          <tr>
+            <td>&nbsp;Allotment Name: <input name="allot_1" type="number" /></td>
+          </tr>
+          <tr>
+            <td>&nbsp;List the Final Share Price: <input name="finalShare_1" type="number" /></td>
+          </tr>
+          <tr>
+            <td>&nbsp;Lsit the Sell Commission: <input name="sell_comm_1" type="number" /></td>
+          </tr>
+          <tr>
+            <td>&nbsp;Initial Share Price is : <input name="initShare_1" type="number" /></td>
+          </tr>
+          <tr>
+            <td>&nbsp;Buy Commission for is: <input name="buy_comm_1" type="number" /></td>
+          </tr>
+          <tr>
+            <td>&nbsp;Capital Gain Tax Rate (%): <input name="taxRate_1" type="number" /></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <input type="submit" value="Compute" /> <input type="Clear" />
+    </form>
+
+    <p>&nbsp;</p>
+  </body>
+</html>
